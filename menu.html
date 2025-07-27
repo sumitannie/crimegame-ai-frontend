@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CaseFiles Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to right, #f8f8ff, #eaeaff);
+      font-family: 'Orbitron', sans-serif;
+      color: #1e1e2e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 40px;
+      color: #4b2dbd;
+      text-shadow: 0 0 8px rgba(75, 45, 189, 0.1);
+      letter-spacing: 3px;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .menu-btn {
+      background: linear-gradient(135deg, #a18aff, #dcd4ff);
+      color: #1e1e2e;
+      padding: 20px 30px;
+      border: none;
+      border-radius: 18px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 20px rgba(140, 115, 255, 0.3);
+    }
+
+    .menu-btn:hover {
+      transform: translateY(-6px) scale(1.05);
+      background: linear-gradient(135deg, #bba4ff, #f0e9ff);
+      box-shadow: 0 0 25px rgba(100, 80, 255, 0.4);
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+
+      .menu-btn {
+        font-size: 1.1rem;
+        padding: 16px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>CASEFILES MENU</h1>
+
+  <div class="menu-grid">
+    <button class="menu-btn" onclick="location.href='menu/play_modes.html'">🎮 Play Modes</button>
+    <button class="menu-btn" onclick="location.href='menu/scenarios.html'">🕵️‍♂️ Scenarios</button>
+    <button class="menu-btn" onclick="location.href='menu/training.html'">📚 Training & Research</button>
+    <button class="menu-btn" onclick="location.href='menu/ai_engine.html'">🤖 AI Engine</button>
+    <button class="menu-btn" onclick="location.href='menu/sandbox.html'">🧪 Sandbox</button>
+    <button class="menu-btn" onclick="location.href='menu/media.html'">🎥 Media</button>
+  </div>
+</body>
+</html>

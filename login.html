@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - CaseFiles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #080820;
+      color: white;
+      font-family: 'Orbitron', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('images/login_bg.jpg'); /* Optional background */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .login-container {
+      background-color: rgba(0, 0, 0, 0.65);
+      padding: 50px 40px;
+      border-radius: 15px;
+      width: 600px;
+      height: 500px;
+      max-width: 90%;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.2);
+    }
+
+    .login-title {
+      background-color: #b30000;
+      display: inline-block;
+      padding: 12px 30px;
+      font-size: 1.7rem;
+      color: white;
+      border-radius: 5px;
+      margin-bottom: 40px;
+      font-weight: bold;
+      text-shadow: 2px 2px 0 #400000;
+      letter-spacing: 2px;
+    }
+
+    label {
+      font-size: 1rem;
+      margin-bottom: 8px;
+      display: block;
+      text-align: left;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      background-color: #1c1c3c;
+      color: white;
+      font-size: 1rem;
+      margin-bottom: 30px;
+      outline: none;
+      box-shadow: 0 0 8px rgba(122, 92, 255, 0.3);
+    }
+
+    input::placeholder {
+      color: #aaa;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(to right, #7a5cff, #a875ff);
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      letter-spacing: 1px;
+      transition: background 0.3s ease;
+      box-shadow: 0 0 12px rgba(122, 92, 255, 0.6);
+    }
+
+    .login-btn:hover {
+      background: linear-gradient(to right, #a875ff, #7a5cff);
+    }
+
+    .signup {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .signup a {
+      color: white;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    /* Decorative crime scene visuals (optional) */
+    .decor {
+      position: absolute;
+      opacity: 0.1;
+    }
+
+    .decor.tape {
+      top: 20px;
+      left: 20px;
+      width: 120px;
+    }
+
+    .decor.hand {
+      bottom: 30px;
+      right: 30px;
+      width: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Optional decorative overlays -->
+  <!-- <img src="images/crime-tape.png" class="decor tape" alt="Crime Scene Tape">
+  <img src="images/handprint.png" class="decor hand" alt="Bloody Handprint"> -->
+
+  <div class="login-container">
+    <div class="login-title">LOGIN</div>
+
+    <form>
+      <label for="username">USERNAME</label>
+      <input type="text" id="username" placeholder="Enter username">
+
+      <label for="password">PASSWORD</label>
+      <input type="password" id="password" placeholder="Enter password">
+
+      <button type="submit" class="login-btn">ENTER CASEFILE</button>
+    </form>
+
+    <div class="signup">
+      NEW TO CASEFILE? <a href="#">SIGN UP!</a>
+    </div>
+  </div>
+
+</body>
+</html>

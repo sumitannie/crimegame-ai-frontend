@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: 'Courier New', monospace;
+  background-color: #0b0b2e;
+  color: white;
+  text-align: center;
+}
+
+.center {
+  margin-top: 20vh;
+}
+
+.play-button {
+  padding: 14px 30px;
+  background: #7a5cff;
+  border-radius: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  box-shadow: 0 4px 12px rgba(122, 92, 255, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.play-button:hover {
+  transform: scale(1.05);
+  background-color: #a78bfa;
+}
+
+.role-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.role-card {
+  background-color: #5c48d3;
+  padding: 30px 60px;
+  border-radius: 16px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+  box-shadow: 0 0 20px rgba(140, 115, 255, 0.3);
+}
+
+.role-card:hover {
+  transform: scale(1.1);
+  background-color: #8d6bff;
+  box-shadow: 0 0 30px rgba(173, 140, 255, 0.6);
+}
+
+.role-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding: 50px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.role-image {
+  height: 460px;
+  border-radius: 18px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.role-image:hover {
+  transform: scale(1.02);
+}
+
+.role-box {
+  background-color: #7a5cff;
+  padding: 40px 30px;
+  border-radius: 24px;
+  max-width: 450px;
+  color: white;
+  box-shadow: 0 0 25px rgba(122, 92, 255, 0.6);
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.role-box h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.start-role-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 14px 28px;
+  background: #0b0b2e;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+}
+
+.start-role-btn:hover {
+  background: #2c2c6e;
+  transform: scale(1.05);
+}
