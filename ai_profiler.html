@@ -14,7 +14,7 @@
     <a href="ai_profiler.html" class="start-role-btn">Start Profiling</a>
   </div>
 
-<button onclick="location.href='menu/play_modes.html'" style="
+<button onclick="goBackToPlayModes()" style="
   position: fixed;
   bottom: 20px;
   left: 20px;
@@ -30,5 +30,17 @@
 ">
   ← Back
 </button>
+
+<!-- Dynamic GitHub Pages / Localhost Back Path Script -->
+  <script>
+    function goBackToPlayModes() {
+      const base =
+        location.hostname === "localhost" || location.hostname === "127.0.0.1"
+          ? ""
+          : "/crimegame-ai-frontend";
+      location.href = `${base}/menu/play_modes.html`;
+    }
+  </script>
+
 </body>
 </html>
